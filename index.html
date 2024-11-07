@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="root-container">
+      <div class="container">
+        <h1 class="header">QUIZ</h1>
+
+        <form class="container" action="">
+          <div class="question">
+            <label id="ques_label" for="capital">
+              What's the capital of India?</label
+            >
+          </div>
+          <div>
+            <input
+              id="option1_value"
+              type="radio"
+              name="lucknow"
+              id="lucknow"
+            />
+            <label id="option1_label" for="lucknow">Lucknow</label>
+          </div>
+          <div>
+            <input id="option2_value" type="radio" name="delhi" id="delhi" />
+            <label id="option2_label" for="delhi">Delhi</label>
+          </div>
+          <div>
+            <input id="option3_value" type="radio" name="gzb" id="gzb" />
+            <label id="option3_label" for="gzb">Gzb</label>
+          </div>
+
+          <div class="buttons">
+            <button onclick="handlePrev()" class="prev-btn">Previous</button>
+            <button onclick="handleNext()" class="next-btn">Next</button>
+            <!-- <button id="submit" onclick="submit()">Submit</button> -->
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
